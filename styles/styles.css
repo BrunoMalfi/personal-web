@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  justify-content: space-around;
+  background-color:rgb(197, 221, 235) ;
+}
+.leftbarlink{
+  flex-grow: 1;
+  text-align: left;
+}
+.centerbarlink{
+  flex-grow: 1;
+  text-align: center;
+}
+.rightbarlink{
+  flex-grow: 1;
+  text-align: right;
+}
