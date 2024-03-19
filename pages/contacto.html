@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
     <div class="topbar">
         <div class="leftbarlink"><a href="../index.html" target="_blank">Home</a></div>
         <div class="centerbarlink"><a href="biografia.html" target="_blank">Biografia</a></div>
         <div class="rightbarlink"><a href="portfolio.html" target="_blank">Portfolio</a></div>
-     </div> 
-    <h1>contacto</h1>
-    <p>texto en el body de página de contacto</p>
+    </div>
+    <div class="bodytext">
+        <h1>Contacto</h1>
+        <p>Texto en el body de página de contacto</p>
+        <h2>Formulario de contacto : </h2>
+        <form>
+            <fieldset>
+                <legend>Datos Personales </legend>
+                <label for="Nombre">Nombre : </label>
+                <input type="text" id="Nombre" name="Nombre" autofocus tabindex="1" placeholder="Pepito"><br />
+                <label for="Apellido">Apellido : </label>
+                <input type="text" id="Apellido" name="Apellido" tabindex="2" placeholder="Garcia" /><br />
+                <label for="Edad">Edad : </label>
+                <input type="number" id="Edad" name="Edad" tabindex="3" placeholder="73"><br /><br />
+                <p>Sexo</p>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label><br />
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br /><br />
+            </fieldset>
+            <fieldset>
+                <legend>Rellene su lolicitud :</legend>
+                <label for="gatitos">
+                    <input type="checkbox" value="gatitos" id="gatitos" name="gatitos" />
+                    Me gustan los gatitos
+                </label><br />
+                <label for="perritos">
+                    <input type="checkbox" value="perritos" id="perritos" name="perritos" />
+                    Me gustan los perritos
+                </label><br />
+                <label for="perdido">
+                    <input type="checkbox" value="perdido" id="perdido" name="perdido" />
+                    Me he perdido y no se como he llegado hasta aquí
+                </label>
+                <br /><br />
+                <textarea name="message" rows="10" cols="30">Escriba aquí su consulta : </textarea>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Datos de contaco</legend>
+                <label for="email">e-mail :</label>
+                <input type="email" id="email" name="email" placeholder="pepito@gmalil.com"><br />
+                <label for="telefono">Teléfono móvil : </label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    placeholder="626-222-222"><br />
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
 </body>
+
 </html>
